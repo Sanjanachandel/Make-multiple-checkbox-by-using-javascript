@@ -1,0 +1,24 @@
+<html>
+	<head>
+	<script>
+	function check()
+	{
+		var a=document.getElementById("1").value;
+		var i;
+		var str=" ";
+		for(i=1;i<=parseInt(a);i++)
+		{
+			str=str+"<input type='checkbox'value='"+i+"'><br><br>"
+			document.getElementById("2").innerHTML=str;
+		}
+	}	
+	
+	</script>
+	</head>
+	<body>
+	Enter total check box:<input type="text" id="1">
+	
+	<input type ="button" value="click me" onclick="check()">
+	<div id="2"></div>
+	</body>
+</html>
